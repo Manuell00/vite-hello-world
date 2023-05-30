@@ -1,10 +1,12 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue';
 
 export default{
     components: {
         AppTitle,
+        AppHero,
         HelloWorld
     }
 }
@@ -12,7 +14,11 @@ export default{
 
 <template>
   <div>
+    <!-- Inserisco il titolo -->
     <AppTitle/>
+
+    <!-- Inserisco il Jumbotron -->
+    <AppHero/>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -36,4 +42,5 @@ export default{
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
+
 </style>
